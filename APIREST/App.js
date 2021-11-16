@@ -22,6 +22,8 @@ app.use(cors())
 // Nous définissons ici les paramètres du serveur.
 var hostname = 'localhost'; 
 var port = 8080;
+var ikram;
+var celia;
  
 // La variable mongoose nous permettra d'utiliser les fonctionnalités du module mongoose.
 var mongoose = require('mongoose'); 
