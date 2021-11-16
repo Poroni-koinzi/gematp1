@@ -25,6 +25,8 @@ var port = 8080;
 var ikram;
 var celia;
 console
+console2
+
 
 // La variable mongoose nous permettra d'utiliser les fonctionnalités du module mongoose.
 var mongoose = require('mongoose');
@@ -139,4 +141,9 @@ myRouter.route('/products/:products_id')
 app.use(myRouter);
 app.listen(port, hostname, function() {
     console.log("Mon serveur fonctionne sur http://" + hostname + ":" + port);
+
+    console.log("Mon serveur fonctionne sur http://" + hostname + ":" + port);
+
+
+
 });
