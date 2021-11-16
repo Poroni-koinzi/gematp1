@@ -26,6 +26,7 @@ var ikram;
 var celia;
 console
 console2
+console3
 
 
 // La variable mongoose nous permettra d'utiliser les fonctionnalités du module mongoose.
