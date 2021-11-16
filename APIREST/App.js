@@ -4,7 +4,7 @@ var cors = require('cors')
 const http = require('http').createServer(app);
 /*app.use(function(req, res, next) {
 
-    res.header("Access-Control-Allow-Origin", "*");
+   salut j'ai modifie c'est fichié
   
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   
