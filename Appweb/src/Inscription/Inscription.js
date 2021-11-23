@@ -15,11 +15,13 @@ class Inscription extends React.Component {
             redirection: false
 
         };
+        console.toto
     }
     myChangeHandler = (event) => {
         let nam = event.target.name;
         let val = event.target.value;
-        this.setState({ [nam]: val });
+        this.setState({
+            [nam]: val });
     }
 
     handleSubmit = event => {
@@ -40,45 +42,49 @@ class Inscription extends React.Component {
 
 
     render() {
-        
+
         const { redirection } = this.state;
         if (redirection) {
-            return <Redirect to='/Connexion' />;
+            return <Redirect to = '/Connexion' / > ;
         }
-        return (
-            <div style={{ textAlign: "center", marginTop: 60 }}>
-                <form onSubmit={this.handleSubmit}>
-                    <h1>Inscription</h1>
-                    <p>Entrer votre pseudo</p>
-                    <input
-                        type='text'
-                        name='pseudo'
-                        onChange={this.myChangeHandler}
-                    />
-                    <p>Entrer votre email</p>
-                    <input
-                        type='text'
-                        name='email'
-                        onChange={this.myChangeHandler}
-                    />
-                    <p>Entrer votre mot de passe</p>
-                    <input
-                        type='text'
-                        name='password'
-                        onChange={this.myChangeHandler}
-                    />
-                    <p>Confirmer votre mot de passe</p>
-                    <input
-                        type='text'
-                        name='passConfirm'
-                        onChange={this.myChangeHandler}
-                    />
-                    <br />
-                    <br />
+        return ( <
+            div style = {
+                { textAlign: "center", marginTop: 60 } } >
+            <
+            form onSubmit = { this.handleSubmit } >
+            <
+            h1 > Inscription < /h1> <
+            p > Entrer votre pseudo < /p> <
+            input type = 'text'
+            name = 'pseudo'
+            onChange = { this.myChangeHandler }
+            /> <
+            p > Entrer votre email < /p> <
+            input type = 'text'
+            name = 'email'
+            onChange = { this.myChangeHandler }
+            /> <
+            p > Entrer votre mot de passe < /p> <
+            input type = 'text'
+            name = 'password'
+            onChange = { this.myChangeHandler }
+            /> <
+            p > Confirmer votre mot de passe < /p> <
+            input type = 'text'
+            name = 'passConfirm'
+            onChange = { this.myChangeHandler }
+            /> <
+            br / >
+            <
+            br / >
 
-                    <input type='submit' style={{ background: "blue", width: 210, height: 50 }} />
-                </form>
-            </div>
+            <
+            input type = 'submit'
+            style = {
+                { background: "blue", width: 210, height: 50 } }
+            /> <
+            /form> <
+            /div>
         );
     }
 }
